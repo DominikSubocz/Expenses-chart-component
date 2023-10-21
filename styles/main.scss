@@ -1,0 +1,73 @@
+$font-weights:(
+    "regular": 400,
+    "bold": 700
+);
+
+$soft-red:hsl(10, 79%, 65%);
+$cyan:hsl(186, 34%, 60%);
+
+$dark-brown:hsl(25, 47%, 15%);
+$medium-brown: hsl(28, 10%, 53%);
+$cream: hsl(27, 66%, 92%);
+$very-pale-orange:hsl(33, 100%, 98%);
+
+body{
+    background-color: $cream;
+}
+
+
+
+@media only screen and (max-width: 375px){
+    
+    .outer {
+        display: table;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+      }
+      
+      .middle {
+        display: table-cell;
+        vertical-align: middle;
+      }
+      
+      .inner {
+        width: 100vw;
+        /* Whatever width you want */
+      }
+
+      .card-container{
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        margin:0 auto;
+      }
+
+      .item-card{
+        border-radius: 10px;
+        margin:2vw 0 2vw 0;
+      }
+
+      .balance-card{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: $soft-red;
+        color:$very-pale-orange;
+      }
+
+      .spending-card{
+        background-color: $very-pale-orange;
+      }
+
+      .dot {
+        height: 25px;
+        width: 25px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+      }
+      
+}
