@@ -13,9 +13,30 @@ $very-pale-orange:hsl(33, 100%, 98%);
 
 body{
     background-color: $cream;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.thisMonth > p {
+    color:$medium-brown;
+}
+
+.thisMonth > h2 {
+  color:$dark-brown;
+}
+
+.lastMonth > p {
+  color:$medium-brown;
+}
+
+.lastMonth > h4 {
+  color:$dark-brown;
 }
 
 
+hr{
+  background-color: $cream;
+  border: none;
+}
 
 @media only screen and (max-width: 375px){
     
@@ -48,6 +69,7 @@ body{
       .item-card{
         border-radius: 10px;
         margin:2vw 0 2vw 0;
+        padding:0 4vw;
       }
 
       .balance-card{
@@ -58,16 +80,118 @@ body{
         color:$very-pale-orange;
       }
 
+      .balance > h3{
+        font-weight: 400;
+        font-size:4vw;
+        margin-bottom: 1vw;
+      }
+
+      .balance > h2{
+        font-size:5vw;
+        letter-spacing: 0.5vw;
+        margin-top: 1vw;
+      }
+
       .spending-card{
         background-color: $very-pale-orange;
       }
 
-      .dot {
-        height: 25px;
-        width: 25px;
-        background-color: #bbb;
+      .icon-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto; /* Use margin-left: auto to push the container to the right */      
+      }
+
+      .outer-circle {
+        width: 10vw;
+        height: 10vw;
+        border: solid 2px $cream;
         border-radius: 50%;
-        display: inline-block;
+        position: relative; /* Add position: relative to create a positioning context */
+        z-index: 1;
       }
       
+      .inner-circle {
+        width: 10vw; /* Adjust the width to control how much of the inner circle is visible */
+        height: 10vw;
+        background-color: $dark-brown;
+        border-radius: 50%;
+        position: relative; /* Add position: absolute to position the inner circle relative to the outer circle */
+        right: 5vw; /* Position the inner circle to the right of the outer circle */
+      }
+
+      .spending-card{
+        display: flex;
+        flex-direction: column;
+      }
+
+
+
+      hr{
+        width: 95%;
+        height: 0.5vw;
+      }
+
+      .monthlySummary{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+      .thisMonth > p {
+        margin-bottom: 1vw;
+      }
+
+      .thisMonth > h2 {
+        margin-top:1vw;
+      }
+
+      .lastMonth > p {
+        margin-top: 1vw;
+      }
+
+      .lastMonth > h4 {
+        margin-bottom:1vw;
+        text-align: right;
+      }
+
+      .spending-card > h1{
+        font-size:6vw;
+      }
+
+      .chart-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .chart-days{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size:3vw;
+
+      }
+
+      .chart-bars{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin:0 3vw;
+      }
+
+      .chart-bar{
+        width: 6vw;
+        border-radius: 5px;
+        height: 50vw;
+        background-color: aqua;
+      
+      }
+      
+
+
 }
