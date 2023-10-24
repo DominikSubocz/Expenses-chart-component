@@ -38,6 +38,13 @@ hr{
   border: none;
 }
 
+.today{
+  background-color: red;
+}
+.other-day{
+  background-color: blue;
+}
+
 @media only screen and (max-width: 375px){
     
     .outer {
@@ -179,16 +186,14 @@ hr{
       .chart-bars{
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: flex-end;
         justify-content: space-around;
         margin:0 3vw;
       }
 
       .chart-bar{
-        width: 6vw;
+        width: 8vw;
         border-radius: 5px;
-        background-color: aqua;
-      
       }
       
 
