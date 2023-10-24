@@ -2,9 +2,10 @@
 const jsonFilePath = 'data.json';
 
 const currentDate =  new Date();
-const curerntDay = currentDate.getDay();
+const currentDay = currentDate.getDay();
 
-const dayClasses = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
+const dayClasses = ["mon","tue","wed","thu","fri","sat","sun"];
+
 
 // Fetch the JSON data
 fetch(jsonFilePath)
@@ -34,16 +35,9 @@ function updateDivHeights(data) {
     const height = (amount / maxHeight) * 30 + "vw"; // Assuming your CSS uses percentage-based heights
 
     divs[index].style.height = height;
-
-    if(dayClasses[index] === item.curerntDay){
-      divs[index].classList.add('today');
+    if(divs[currentDay]){
+      divs[currentDay].classList.add('today');
     }
-
-    else{
-      divs[index].classList.add('other-day');
-    
-    }
-
   });
   
 }
