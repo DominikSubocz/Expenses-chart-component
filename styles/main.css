@@ -25,11 +25,11 @@ hr {
 }
 
 .today {
-  background-color: red;
+  background-color: hsl(186, 34%, 60%);
 }
 
 .other-day {
-  background-color: blue;
+  background-color: hsl(10, 79%, 65%);
 }
 
 @media only screen and (max-width: 375px) {
@@ -108,8 +108,8 @@ hr {
     flex-direction: column;
   }
   hr {
-    width: 95%;
-    height: 0.5vw;
+    width: 90%;
+    height: 0.75vw;
   }
   .monthlySummary {
     display: flex;
@@ -118,22 +118,28 @@ hr {
     justify-content: space-around;
   }
   .thisMonth > p {
-    margin-bottom: 1vw;
+    margin-bottom: 2vw;
+    font-size: 4.5vw;
   }
   .thisMonth > h2 {
-    margin-top: 1vw;
+    margin-top: 2vw;
+    font-size: 9.5vw;
   }
   .lastMonth > p {
     margin-top: 1vw;
+    margin-bottom: 8vw;
+    font-size: 4.5vw;
   }
   .lastMonth > h4 {
     margin-bottom: 1vw;
     text-align: right;
+    font-size: 5vw;
   }
   .spending-card > h1 {
     font-size: 6vw;
   }
   .chart-container {
+    padding: 10vw 0 1vw 0;
     display: flex;
     flex-direction: column;
     justify-content: center;

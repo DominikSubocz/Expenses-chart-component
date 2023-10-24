@@ -1,11 +1,10 @@
 // Define the path to your JSON file
 const jsonFilePath = 'data.json';
 
+
+
 const currentDate =  new Date();
-const currentDay = currentDate.getDay();
-
-const dayClasses = ["mon","tue","wed","thu","fri","sat","sun"];
-
+const currentDay = currentDate.toLocaleString('en-US', { weekday: 'short' }).toLowerCase(); // Gets day as "Mon", "Tue", etc.
 
 // Fetch the JSON data
 fetch(jsonFilePath)
@@ -32,12 +31,17 @@ function updateDivHeights(data) {
 
   divs.forEach((item, index) => {
     const amount = data[index].amount;
-    const height = (amount / maxHeight) * 30 + "vw"; // Assuming your CSS uses percentage-based heights
+    const height = (amount / maxHeight) * 35 + "vw"; // Assuming your CSS uses percentage-based heights
 
     divs[index].style.height = height;
-    if(divs[currentDay]){
-      divs[currentDay].classList.add('today');
-    }
+    divs.forEach((div) => {
+      const dayFromData = div.getAttribute("data-day");
+      if (dayFromData === currentDay) {
+        div.classList.add('today'); // Add a CSS class for today's div
+      } else {
+        div.classList.add('other-day'); // Add a CSS class for other days
+      }
+    });
   });
   
 }
