@@ -32,23 +32,42 @@ hr {
   background-color: hsl(10, 79%, 65%);
 }
 
+.outer {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.inner {
+  width: 100vw;
+  /* Whatever width you want */
+}
+
+.item-card {
+  border-radius: 10px;
+}
+
+.spending-card {
+  background-color: hsl(33, 100%, 98%);
+}
+
+.balance-card {
+  background-color: hsl(10, 79%, 65%);
+}
+
+.inner-circle {
+  background-color: hsl(25, 47%, 15%);
+}
+
 @media only screen and (max-width: 375px) {
-  .outer {
-    display: table;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-  }
-  .middle {
-    display: table-cell;
-    vertical-align: middle;
-  }
-  .inner {
-    width: 100vw;
-    /* Whatever width you want */
-  }
   .card-container {
     display: flex;
     flex-direction: column;
@@ -56,7 +75,6 @@ hr {
     margin: 0 auto;
   }
   .item-card {
-    border-radius: 10px;
     margin: 2vw 0 2vw 0;
     padding: 0 4vw;
   }
@@ -64,7 +82,6 @@ hr {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: hsl(10, 79%, 65%);
     color: hsl(33, 100%, 98%);
   }
   .balance > h3 {
@@ -76,9 +93,6 @@ hr {
     font-size: 5vw;
     letter-spacing: 0.5vw;
     margin-top: 1vw;
-  }
-  .spending-card {
-    background-color: hsl(33, 100%, 98%);
   }
   .icon-container {
     display: flex;
@@ -98,7 +112,6 @@ hr {
   .inner-circle {
     width: 10vw; /* Adjust the width to control how much of the inner circle is visible */
     height: 10vw;
-    background-color: hsl(25, 47%, 15%);
     border-radius: 50%;
     position: relative; /* Add position: absolute to position the inner circle relative to the outer circle */
     right: 5vw; /* Position the inner circle to the right of the outer circle */
@@ -134,6 +147,114 @@ hr {
     margin-bottom: 1vw;
     text-align: right;
     font-size: 5vw;
+  }
+  .spending-card > h1 {
+    font-size: 6vw;
+  }
+  .chart-container {
+    padding: 10vw 0 1vw 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .chart-days {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 3vw;
+  }
+  .chart-bars {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+    margin: 0 3vw;
+  }
+  .chart-bar {
+    width: 8vw;
+    border-radius: 5px;
+  }
+}
+@media only screen and (min-width: 375px) {
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .item-card {
+    margin: 2vw 0 2vw 0;
+    padding: 0 4vw;
+  }
+  .balance-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: hsl(33, 100%, 98%);
+  }
+  .balance > h3 {
+    font-weight: 400;
+    font-size: 4vw;
+    margin-bottom: 1vw;
+  }
+  .balance > h2 {
+    font-size: 5vw;
+    letter-spacing: 0.5vw;
+    margin-top: 1vw;
+  }
+  .icon-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+  }
+  .outer-circle {
+    width: 10vw;
+    height: 10vw;
+    border: solid 2px hsl(27, 66%, 92%);
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+  }
+  .inner-circle {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    position: relative;
+    right: 5vw;
+  }
+  .spending-card {
+    display: flex;
+    flex-direction: column;
+  }
+  hr {
+    width: 90%;
+    height: 0.75vw;
+  }
+  .monthlySummary {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .thisMonth > p {
+    margin-bottom: 2vw;
+    font-size: 3.5vw;
+  }
+  .thisMonth > h2 {
+    margin-top: 2vw;
+    font-size: 7vw;
+  }
+  .lastMonth > p {
+    margin-top: 1vw;
+    margin-bottom: 8vw;
+    font-size: 4vw;
+  }
+  .lastMonth > h4 {
+    margin-bottom: 1vw;
+    text-align: right;
+    font-size: 3.5vw;
   }
   .spending-card > h1 {
     font-size: 6vw;

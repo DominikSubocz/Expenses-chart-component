@@ -1,12 +1,17 @@
+// =======================================================================================================================================================
+
 // Define the path to your JSON file
 const jsonFilePath = 'data.json';
 
 
-
+// Define currentDate as new Date
 const currentDate =  new Date();
 const currentDay = currentDate.toLocaleString('en-US', { weekday: 'short' }).toLowerCase(); // Gets day as "Mon", "Tue", etc.
-
+// =======================================================================================================================================================
 // Fetch the JSON data
+// This chunk of code will basically process our JSON file.
+// Fetch basically means we are grabbing something (our JSON file) and making it available to our website.
+
 fetch(jsonFilePath)
   .then(response => {
     if (!response.ok) {
@@ -15,14 +20,16 @@ fetch(jsonFilePath)
     return response.json(); // Parse the JSON response
   })
   .then(data => {
-    // Handle your JSON data here
     console.log(data); // Display the data in the console as an example
-    // You can call your function to process the data here
     updateDivHeights(data);
   })
   .catch(error => {
-    console.error('Error fetching JSON data:', error);
+    console.error('Error fetching JSON data:', error); // Display error.
   });
+
+
+  // =======================================================================================================================================================
+
 
 // Define a function to update the div heights
 function updateDivHeights(data) {
