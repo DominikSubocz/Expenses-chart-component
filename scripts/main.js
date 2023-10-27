@@ -46,7 +46,7 @@ function updateDivHeights(data) {
    
     // If windows is wider, the bars are shorter!
     if(window.innerWidth >= 600){
-    height = (amount / maxHeight) * 25 + "vw"; 
+    height = (amount / maxHeight) * 20 + "vw"; 
     }
 
     // If window is narrower, the bars are longer!
