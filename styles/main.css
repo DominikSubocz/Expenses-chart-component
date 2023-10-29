@@ -417,58 +417,16 @@ hr {
     height: 0.3vw;
   }
 }
-@media only screen and (min-width: 950px) {
-  .card-container {
-    width: 75vw;
-  }
-  .balance > h3 {
-    font-size: 1.5vw;
-  }
-  .balance > h2 {
-    font-size: 2.5vw;
-  }
-  .outer-circle {
-    width: 5vw;
-    height: 5vw;
-  }
-  .inner-circle {
-    width: 5vw;
-    height: 5vw;
-  }
-  .thisMonth > p {
-    font-size: 1.5vw;
-  }
-  .thisMonth > h2 {
-    font-size: 3.5vw;
-  }
-  .lastMonth > p {
-    font-size: 1.5vw;
-  }
-  .lastMonth > h4 {
-    font-size: 2vw;
-  }
-  .chart-container {
-    padding: 5vw 0 1vw 0;
-  }
-  .chart-bar {
-    width: 6vw;
-  }
-  .chart-days {
-    font-size: 1.5vw;
-  }
-  .spending-card > h1 {
-    margin-bottom: 0;
-  }
-}
-@media only screen and (min-width: 1050px) {
+@media only screen and (min-width: 1100px) {
   .card-container {
     display: flex;
     flex-direction: column;
-    width: 70vw;
+    width: 95vw;
     margin: 0 auto;
   }
   .item-card {
-    margin: 2vw 0 2vw 0;
+    margin: 1vw 0 1vw 0;
+    padding: 0 5vw;
   }
   .balance-card {
     display: flex;
@@ -519,39 +477,35 @@ hr {
   }
   hr {
     width: 90%;
-    height: 0.5vw;
+    height: 0.3vw;
   }
-  .monthlySummaru {
+  .monthlySummary {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 5vw;
   }
   .thisMonth > p {
     margin-bottom: 1vw;
-    font-size: 2vw;
+    font-size: 1.5vw;
   }
   .thisMonth > h2 {
     margin-top: 1vw;
-    font-size: 5vw;
+    font-size: 4vw;
   }
   .lastMonth {
-    margin-top: 5vw;
+    margin-top: 2vw;
+    text-align: right;
   }
   .lastMonth > p {
     margin-top: 1vw;
     margin-bottom: 5vw;
-    font-size: 2vw;
-  }
-  .lastMonth {
-    text-align: right;
+    font-size: 1.5vw;
   }
   .lastMonth > h4 {
     margin-bottom: 1vw;
-    font-size: 2.5vw;
-  }
-  .spending-card > h1 {
-    font-size: 4vw;
+    font-size: 2vw;
   }
   .chart-days {
     display: flex;
@@ -565,6 +519,9 @@ hr {
     align-items: flex-end;
     justify-content: space-around;
     margin: 0 3vw;
+  }
+  .spending-card > h1 {
+    font-size: 4vw;
   }
   .chart-bar {
     width: 6vw;
