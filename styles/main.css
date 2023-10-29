@@ -417,7 +417,7 @@ hr {
     height: 0.3vw;
   }
 }
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 992px) {
   .card-container {
     display: flex;
     flex-direction: column;
