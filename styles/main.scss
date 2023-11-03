@@ -106,13 +106,12 @@ hr{
 
       .balance > h3{
         font-weight: 400;
-        font-size:4vw;
+        font-size:3vw;
         margin-bottom: 1vw;
       }
 
       .balance > h2{
         font-size:5vw;
-        letter-spacing: 0.5vw;
         margin-top: 1vw;
       }
 
@@ -163,24 +162,25 @@ hr{
 
       .thisMonth > p {
         margin-bottom: 2vw;
-        font-size:4.5vw;
+        font-size:3vw;
       }
 
       .thisMonth > h2 {
         margin-top:2vw;
-        font-size:9.5vw;
+        letter-spacing: 0.5vw;
+        font-size:9vw;
       }
 
       .lastMonth > p {
         margin-top: 1vw;
         margin-bottom:8vw;
-        font-size:4.5vw;
+        font-size:3vw;
       }
 
       .lastMonth > h4 {
         margin-bottom:1vw;
         text-align: right;
-        font-size:5vw;
+        font-size:3.5vw;
 
       }
 
@@ -241,13 +241,13 @@ hr{
 
 .balance > h3{
   font-weight: 400;
-  font-size: 4vw;
+  font-size: 3.5vw;
   margin-bottom: 1vw;
 }
 
 .balance > h2{
-  font-size: 5vw;
-  letter-spacing: 0.5vw;
+  font-size: 6vw;
+  letter-spacing: 0.2vw;
   margin-top: 1vw;
 }
 
@@ -296,18 +296,22 @@ hr{
 
 .thisMonth > p {
   margin-bottom: 2vw;
-  font-size:3.5vw;
+  font-size:3vw;
+}
+.lastMonth{
+  margin-top:5vw;
 }
 
 .thisMonth > h2 {
   margin-top:2vw;
-  font-size:7vw;
+  letter-spacing: 0.5vw;
+  font-size:9vw;
 }
 
 .lastMonth > p {
   margin-top: 1vw;
   margin-bottom:8vw;
-  font-size:4vw;
+  font-size:3vw;
 }
 
 .lastMonth > h4 {
@@ -349,75 +353,10 @@ hr{
 }
 }
 
-@media only screen and (min-width: 550px){
-  .card-container{
-    width: 90vw;
-  }
-
-  .balance > h3{
-    font-weight: 400;
-    font-size: 2.5vw;
-  }
-
-  .balance > h2{
-    font-size: 4vw;
-    letter-spacing: 0.25vw;
-  }
-
-  .outer-circle{
-    width: 8vw;
-    height: 8vw;
-  }
-  .inner-circle{
-    width: 8vw;
-    height: 8vw;
-    right: 4vw;
-  }
-
-  hr{
-    height: 0.5vw;
-  }
-
-  .thisMonth > p{
-    margin-bottom: 1vw;
-    font-size: 2.5vw;
-  }
-
-  .thisMonth > h2{
-    font-size: 6vw;
-    margin-top: 1vw;
-    letter-spacing: 0.25vw;
-  }
-
-  .lastMonth > p{
-    font-size: 2.5vw;
-    margin-bottom:0vw;
-
-  }
-
-  .lastMonth > h4{
-    font-size: 3vw;
-    margin-top:0vw;
-
-  }
-
-  .spending-card > h1{
-    font-size: 5vw;
-  }
-
-  .chart-days{
-    font-size: 2vw;
-  }
-
-  .chart-bar{
-    width: 7.5vw;
-  }
-
-}
 
 @media only screen and (min-width: 630px){
 .card-container{
-  width: 90vw;
+  width: 65vw;
 
 }
 
@@ -426,7 +365,7 @@ hr{
 }
 
 .balance > h2{
-  font-size:3.5vw;
+  font-size:3vw;
 }
 
 .outer-circle{
@@ -443,19 +382,31 @@ hr{
   height: 0.4vw;
 }
 
-.thisMonth > p{
-  font-size: 2vw;
+.thisMonth > p {
+  margin-bottom: 2vw;
+  font-size:2vw;
 }
-.thisMonth > h2{
-  font-size: 5vw;
-}
-
-.lastMonth > p{
-  font-size: 2vw;
+.lastMonth{
+  margin-top:5vw;
 }
 
-.lastMonth > h4{
-  font-size: 2.5vw;
+.thisMonth > h2 {
+  margin-top:2vw;
+  letter-spacing: 0.5vw;
+  font-size:5vw;
+}
+
+.lastMonth > p {
+  margin-top: 1vw;
+  margin-bottom:8vw;
+  font-size:2vw;
+}
+
+.lastMonth > h4 {
+  margin-bottom:1vw;
+  text-align: right;
+  font-size:3vw;
+
 }
 
 .spending-card > h1{
@@ -465,76 +416,25 @@ hr{
 .chart-days{
   font-size: 1.5vw;
 }
+
+.chart-bar{
+  width: 6vw;
 }
-
-@media only screen and (min-width: 770px){
-  .card-container{
-    width: 90vw;
-  }
-
-  .balance > h3{
-    font-size:1.75vw;
-  }
-
-  .balance > h2{
-    font-size: 3vw;
-  }
-
-  .outer-circle{
-    width: 6vw;
-    height: 6vw;
-  }
-
-  .inner-circle{
-    width: 6vw;
-    height: 6vw;
-  }
-
-  .thisMonth > h2{
-    font-size: 4vw;
-  }
-
-  .thisMonth > p{
-    font-size: 1.5vw;
-    margin-bottom:0;
-  }
-  
-
-  .lastMonth > p{
-    font-size: 1.5vw;
-
-  }
-
-  .lastMonth > h4{
-    font-size: 2vw;
-  }
-
-  .chart-container{
-    padding:5vw 0 1vw 0;
-  }
-
-  .balance-card{
-    margin-bottom:0;
-  }
-
-  hr{
-    height: 0.3vw;
-  }
-
 }
 
 
-@media only screen and (min-width :992px){
+
+@media only screen and (min-width: 1000px){
   .card-container{
     display: flex;
     flex-direction: column;
-    width: 95vw;
+    width: 65vw;
     margin:0 auto;
   }
 
   .item-card{
-    margin:1vw 0 1vw 0;
-    padding:0 5vw;
+    margin: 1vw 0 1vw 0;
+    padding: 0 5vw;
   }
 
   .balance-card{
@@ -545,12 +445,12 @@ hr{
 
   .balance > h3{
     font-weight: 400;
-    font-size:1.5vw;
-    margin-bottom: 1vw;
+    font-size: 2vw;
+    margin-bottom:1vw;
   }
 
   .balance > h2{
-    font-weight: 400;
+    font-weight: 700;
     font-size: 3vw;
     margin-top:1vw;
   }
@@ -566,7 +466,7 @@ hr{
   .outer-circle{
     width: 5vw;
     height: 5vw;
-    border:solid 2px $cream;
+    border: solid 2px $cream;
     border-radius: 50%;
     position: relative;
     z-index: 1;
@@ -576,7 +476,7 @@ hr{
     width: 5vw;
     height: 5vw;
     border-radius: 50%;
-    position: relative;
+    position:relative;
     right: 2vw;
   }
 
@@ -602,34 +502,33 @@ hr{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding:0 5vw;
-
+    padding: 0 5vw;
   }
-
-  .thisMonth > p{
-    margin-bottom: 1vw;
-    font-size: 1.5vw;
+  .thisMonth > p {
+    margin-bottom: 2vw;
+    font-size:2vw;
   }
-
-  .thisMonth > h2{
-    margin-top:1vw;
-    font-size: 4vw;
-  }
-
   .lastMonth{
+    margin-top:5vw;
+  }
+  
+  .thisMonth > h2 {
     margin-top:2vw;
+    letter-spacing: 0.5vw;
+    font-size:5vw;
+  }
+  
+  .lastMonth > p {
+    margin-top: 1vw;
+    margin-bottom:8vw;
+    font-size:2vw;
+  }
+  
+  .lastMonth > h4 {
+    margin-bottom:1vw;
     text-align: right;
-  }
-
-  .lastMonth > p{
-    margin-top:1vw;
-    margin-bottom:5vw;
-    font-size:1.5vw;
-  }
-
-  .lastMonth > h4{
-    margin-bottom: 1vw;
-    font-size: 2vw;
+    font-size:2.5vw;
+  
   }
   .chart-days{
     display: flex;
@@ -643,14 +542,14 @@ hr{
     flex-direction: row;
     align-items: flex-end;
     justify-content: space-around;
-    margin: 0 3vw;
+    margin:0 3vw;
   }
 
   .spending-card > h1{
     font-size: 4vw;
   }
-  
+
   .chart-bar{
-    width: 6vw;
+    width: 5.5vw;
   }
 }
