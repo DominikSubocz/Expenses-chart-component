@@ -45,13 +45,30 @@ function updateDivHeights(data) {
 
    
     // If windows is wider, the bars are shorter!
-    if(window.innerWidth >= 600){
+    if((window.innerWidth >= 600) && (window.innerWidth <= 1000)){ 
     height = (amount / maxHeight) * 20 + "vw"; 
     }
 
+    else if((window.innerWidth >= 1001) && (window.innerWidth <= 1500)){ 
+      height = (amount / maxHeight) * 15 + "vw"; 
+    }
+
+    else if((window.innerWidth >= 1501) && (window.innerWidth <= 2400)){ 
+      height = (amount / maxHeight) * 12 + "vw"; 
+    }
+
+
+    else if((window.innerWidth >= 2401) && (window.innerWidth <= 3500)){ 
+      height = (amount / maxHeight) * 10 + "vw"; 
+    }
+
+
+
+
+
     // If window is narrower, the bars are longer!
     else{ 
-    height = (amount / maxHeight) * 35 + "vw"; 
+    height = (amount / maxHeight) * 25 + "vw"; 
     }
     
     divs[index].style.height = height; // Basically saying that the height of this div at this position should be equal to the height variable.

@@ -342,7 +342,7 @@ hr {
     width: 6vw;
   }
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 750px) {
   .card-container {
     display: flex;
     flex-direction: column;
@@ -360,12 +360,12 @@ hr {
   }
   .balance > h3 {
     font-weight: 400;
-    font-size: 2vw;
+    font-size: 1.5vw;
     margin-bottom: 1vw;
   }
   .balance > h2 {
     font-weight: 700;
-    font-size: 3vw;
+    font-size: 2.5vw;
     margin-top: 1vw;
   }
   .icon-container {
@@ -376,22 +376,22 @@ hr {
     margin-left: auto;
   }
   .outer-circle {
-    width: 5vw;
-    height: 5vw;
+    width: 4vw;
+    height: 4vw;
     border: solid 2px hsl(27, 66%, 92%);
     border-radius: 50%;
     position: relative;
     z-index: 1;
   }
   .inner-circle {
-    width: 5vw;
-    height: 5vw;
+    width: 4vw;
+    height: 4vw;
     border-radius: 50%;
     position: relative;
     right: 2vw;
   }
   .chart-container {
-    padding: 5vw 0 1vw 0;
+    padding: 2vw 0 1vw 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -409,29 +409,21 @@ hr {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 0 5vw;
+    height: 15vw;
   }
   .thisMonth > p {
-    margin-bottom: 2vw;
-    font-size: 2vw;
-  }
-  .lastMonth {
-    margin-top: 5vw;
+    font-size: 1.5vw;
   }
   .thisMonth > h2 {
-    margin-top: 2vw;
-    letter-spacing: 0.5vw;
-    font-size: 5vw;
+    letter-spacing: 0.2vw;
+    font-size: 4vw;
   }
   .lastMonth > p {
-    margin-top: 1vw;
-    margin-bottom: 8vw;
-    font-size: 2vw;
+    font-size: 1.5vw;
   }
   .lastMonth > h4 {
-    margin-bottom: 1vw;
     text-align: right;
-    font-size: 2.5vw;
+    font-size: 2vw;
   }
   .chart-days {
     display: flex;
@@ -451,5 +443,420 @@ hr {
   }
   .chart-bar {
     width: 5.5vw;
+  }
+}
+@media only screen and (min-width: 850px) {
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    width: 75vw;
+    margin: 0 auto;
+  }
+  .item-card {
+    margin: 1vw 0 1vw 0;
+    padding: 0 5vw;
+  }
+  .balance-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .balance > h3 {
+    font-weight: 400;
+    font-size: 1.5vw;
+    margin-bottom: 1vw;
+  }
+  .balance > h2 {
+    font-weight: 700;
+    font-size: 2.5vw;
+    margin-top: 1vw;
+  }
+  .icon-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+  }
+  .outer-circle {
+    width: 4vw;
+    height: 4vw;
+    border: solid 2px hsl(27, 66%, 92%);
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+  }
+  .inner-circle {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    position: relative;
+    right: 2vw;
+  }
+  .chart-container {
+    padding: 2vw 0 1vw 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .spending-card {
+    display: flex;
+    flex-direction: column;
+  }
+  hr {
+    width: 90%;
+    height: 0.3vw;
+  }
+  .monthlySummary {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 15vw;
+  }
+  .thisMonth > p {
+    font-size: 1.5vw;
+  }
+  .thisMonth > h2 {
+    letter-spacing: 0.2vw;
+    font-size: 4vw;
+  }
+  .lastMonth > p {
+    font-size: 1.5vw;
+  }
+  .lastMonth > h4 {
+    text-align: right;
+    font-size: 2vw;
+  }
+  .chart-days {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 1.5vw;
+  }
+  .chart-bars {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+    margin: 0 3vw;
+  }
+  .spending-card > h1 {
+    font-size: 4vw;
+  }
+  .chart-bar {
+    width: 5.5vw;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    width: 55vw;
+    margin: 0 auto;
+  }
+  .item-card {
+    margin: 1vw 0 1vw 0;
+    padding: 0 5vw;
+  }
+  .balance-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .balance > h3 {
+    font-weight: 400;
+    font-size: 1.2vw;
+    margin-bottom: 1vw;
+  }
+  .balance > h2 {
+    font-weight: 700;
+    font-size: 2.2vw;
+    margin-top: 1vw;
+  }
+  .icon-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+  }
+  .outer-circle {
+    width: 4vw;
+    height: 4vw;
+    border: solid 2px hsl(27, 66%, 92%);
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+  }
+  .inner-circle {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    position: relative;
+    right: 2vw;
+  }
+  .chart-container {
+    padding: 2vw 0 1vw 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .spending-card {
+    display: flex;
+    flex-direction: column;
+  }
+  hr {
+    width: 90%;
+    height: 0.3vw;
+  }
+  .monthlySummary {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 15vw;
+  }
+  .thisMonth > p {
+    font-size: 1.2vw;
+  }
+  .thisMonth > h2 {
+    letter-spacing: 0.2vw;
+    font-size: 3vw;
+  }
+  .lastMonth > p {
+    font-size: 1.2vw;
+  }
+  .lastMonth > h4 {
+    text-align: right;
+    font-size: 1.5vw;
+  }
+  .chart-days {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 1.2vw;
+  }
+  .chart-bars {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+    margin: 0 3vw;
+  }
+  .spending-card > h1 {
+    font-size: 3vw;
+    letter-spacing: 0.2vw;
+  }
+  .chart-bar {
+    width: 4.5vw;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    width: 55vw;
+    margin: 0 auto;
+  }
+  .item-card {
+    margin: 1vw 0 1vw 0;
+    padding: 0 5vw;
+  }
+  .balance-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .balance > h3 {
+    font-weight: 400;
+    font-size: 1vw;
+    margin-bottom: 1vw;
+  }
+  .balance > h2 {
+    font-weight: 700;
+    font-size: 1.75vw;
+    margin-top: 1vw;
+  }
+  .icon-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+  }
+  .outer-circle {
+    width: 4vw;
+    height: 4vw;
+    border: solid 2px hsl(27, 66%, 92%);
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+  }
+  .inner-circle {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    position: relative;
+    right: 2vw;
+  }
+  .chart-container {
+    padding: 2vw 0 1vw 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .spending-card {
+    display: flex;
+    flex-direction: column;
+  }
+  hr {
+    width: 90%;
+    height: 0.3vw;
+  }
+  .monthlySummary {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 12vw;
+  }
+  .thisMonth > p {
+    font-size: 1.2vw;
+  }
+  .thisMonth > h2 {
+    letter-spacing: 0.2vw;
+    font-size: 3vw;
+  }
+  .lastMonth > p {
+    font-size: 1.2vw;
+  }
+  .lastMonth > h4 {
+    text-align: right;
+    font-size: 1.3vw;
+  }
+  .chart-days {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 1vw;
+  }
+  .chart-bars {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+    margin: 0 3vw;
+  }
+  .spending-card > h1 {
+    font-size: 3vw;
+    letter-spacing: 0.2vw;
+  }
+  .chart-bar {
+    width: 4.5vw;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    width: 55vw;
+    margin: 0 auto;
+  }
+  .item-card {
+    margin: 1vw 0 1vw 0;
+    padding: 0 5vw;
+  }
+  .balance-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .balance > h3 {
+    font-weight: 400;
+    font-size: 1vw;
+    margin-bottom: 1vw;
+  }
+  .balance > h2 {
+    font-weight: 700;
+    font-size: 1.5vw;
+    margin-top: 1vw;
+  }
+  .icon-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+  }
+  .outer-circle {
+    width: 4vw;
+    height: 4vw;
+    border: solid 2px hsl(27, 66%, 92%);
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+  }
+  .inner-circle {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    position: relative;
+    right: 2vw;
+  }
+  .chart-container {
+    padding: 2vw 0 1vw 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .spending-card {
+    display: flex;
+    flex-direction: column;
+  }
+  hr {
+    width: 90%;
+    height: 0.3vw;
+  }
+  .monthlySummary {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 12vw;
+  }
+  .thisMonth > p {
+    font-size: 1.2vw;
+  }
+  .thisMonth > h2 {
+    letter-spacing: 0.2vw;
+    font-size: 3vw;
+  }
+  .lastMonth > p {
+    font-size: 1.2vw;
+  }
+  .lastMonth > h4 {
+    text-align: right;
+    font-size: 1.3vw;
+  }
+  .chart-days {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 1vw;
+  }
+  .chart-bars {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+    margin: 0 3vw;
+  }
+  .spending-card > h1 {
+    font-size: 3vw;
+    letter-spacing: 0.2vw;
+  }
+  .chart-bar {
+    width: 4.5vw;
   }
 }/*# sourceMappingURL=main.css.map */
