@@ -801,7 +801,7 @@ hr{
 
   .item-card{
     margin: 1vw 0 1vw 0;
-    padding: 0 5vw;
+    padding: 0 2vw;
   }
 
   .balance-card{
@@ -818,7 +818,7 @@ hr{
 
   .balance > h2{
     font-weight: 700;
-    font-size: 1.75vw;
+    font-size: 1.65vw;
     margin-top:1vw;
   }
 
@@ -831,8 +831,8 @@ hr{
   }
 
   .outer-circle{
-    width: 4vw;
-    height: 4vw;
+    width: 3vw;
+    height: 3vw;
     border: solid 2px $cream;
     border-radius: 50%;
     position: relative;
@@ -840,11 +840,11 @@ hr{
   }
 
   .inner-circle{
-    width: 4vw;
-    height: 4vw;
+    width: 3vw;
+    height: 3vw;
     border-radius: 50%;
     position:relative;
-    right: 2vw;
+    right: 1.5vw;
   }
 
   .chart-container{
@@ -861,7 +861,9 @@ hr{
 
   hr{
     width: 90%;
-    height: 0.3vw;
+    height: 0.2vw;
+    padding:0;
+    margin:0 auto;
   }
 
   .monthlySummary{
@@ -872,21 +874,26 @@ hr{
     height: 12vw;
   }
   .thisMonth > p {
-    font-size:1.2vw;
+    font-size:1vw;
+    margin-bottom:0.5vw;
   }
   
   .thisMonth > h2 {
     letter-spacing: 0.2vw;
-    font-size:3vw;
+    font-size:2.5vw;
+    margin-top:0.5vw;
   }
   
   .lastMonth > p {
-    font-size:1.2vw;
+    font-size:1vw;
+    margin-bottom: 7vw;
+    margin-top:0.5vw;
   }
   
   .lastMonth > h4 {
     text-align: right;
     font-size:1.3vw;
+    margin-bottom: 0.5vw;
   
   }
   .chart-days{
@@ -905,7 +912,7 @@ hr{
   }
 
   .spending-card > h1{
-    font-size: 3vw;
+    font-size: 2.5vw;
     letter-spacing: 0.2vw;
   }
 
@@ -923,8 +930,8 @@ hr{
   }
 
   .item-card{
-    margin: 1vw 0 1vw 0;
-    padding: 0 5vw;
+    margin: 0.5vw 0 0.5vw 0;
+    padding: 0 2vw;
   }
 
   .balance-card{
@@ -941,7 +948,7 @@ hr{
 
   .balance > h2{
     font-weight: 700;
-    font-size: 1.5vw;
+    font-size: 2vw;
     margin-top:1vw;
   }
 
@@ -954,8 +961,8 @@ hr{
   }
 
   .outer-circle{
-    width: 4vw;
-    height: 4vw;
+    width: 2vw;
+    height: 2vw;
     border: solid 2px $cream;
     border-radius: 50%;
     position: relative;
@@ -963,11 +970,11 @@ hr{
   }
 
   .inner-circle{
-    width: 4vw;
-    height: 4vw;
+    width: 2vw;
+    height: 2vw;
     border-radius: 50%;
     position:relative;
-    right: 2vw;
+    right: 1vw;
   }
 
   .chart-container{
@@ -984,7 +991,9 @@ hr{
 
   hr{
     width: 90%;
-    height: 0.3vw;
+    height: 0.2vw;
+    padding:0;
+    margin: 0 auto;
   }
 
   .monthlySummary{
@@ -992,31 +1001,36 @@ hr{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    height: 12vw;
+    height: 8vw;
   }
   .thisMonth > p {
-    font-size:1.2vw;
+    font-size:1vw;
+    margin-bottom:0;
   }
   
   .thisMonth > h2 {
     letter-spacing: 0.2vw;
-    font-size:3vw;
+    font-size:2.5vw;
+    margin-top:0;
   }
   
   .lastMonth > p {
-    font-size:1.2vw;
+    font-size:1vw;
+    margin-top:0;
+    margin-bottom:7vw;
   }
   
   .lastMonth > h4 {
     text-align: right;
-    font-size:1.3vw;
+    font-size:1.2vw;
+    margin-bottom: 0.5vw;
   
   }
   .chart-days{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    font-size: 1vw;
+    font-size: 0.85vw;
   }
 
   .chart-bars{
@@ -1028,268 +1042,12 @@ hr{
   }
 
   .spending-card > h1{
-    font-size: 3vw;
+    font-size: 2.5vw;
     letter-spacing: 0.2vw;
   }
 
   .chart-bar{
-    width: 4.5vw;
+    width: 4.2vw;
   }
 }
 
-
-
-
-// @media only screen and (min-width: 2300px){
-//   .card-container{
-//     display: flex;
-//     flex-direction: column;
-//     width: 50vw;
-//     margin:0 auto;
-//   }
-
-//   .item-card{
-//     margin: 1vw 0 1vw 0;
-//     padding: 0 5vw;
-//   }
-
-//   .balance-card{
-//     display: flex;
-//     flex-direction: row;
-//     align-items: center;
-//   }
-
-//   .balance > h3{
-//     font-weight: 400;
-//     font-size: 1.1vw;
-//   }
-
-//   .balance > h2{
-//     font-weight: 700;
-//     font-size: 2vw;
-//     margin-top:1vw;
-//   }
-
-//   .icon-container{
-//     display: flex;
-//     flex-direction: row;
-//     align-items: center;
-//     justify-content: center;
-//     margin-left: auto;
-//   }
-
-//   .outer-circle{
-//     width: 3vw;
-//     height: 3vw;
-//     border: solid 2px $cream;
-//     border-radius: 50%;
-//     position: relative;
-//     z-index: 1;
-//   }
-
-//   .inner-circle{
-//     width: 3vw;
-//     height: 3vw;
-//     border-radius: 50%;
-//     position:relative;
-//     right: 1vw;
-//   }
-
-//   .chart-container{
-//     padding: 2vw 0 1vw 0;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//   }
-
-//   .spending-card{
-//     display: flex;
-//     flex-direction: column;
-//   }
-
-//   hr{
-//     width: 90%;
-//     height: 0.3vw;
-//   }
-
-//   .monthlySummary{
-//     display: flex;
-//     flex-direction: row;
-//     align-items: center;
-//     justify-content: space-between;
-//     height: 10vw;
-//   }
-//   .thisMonth > p {
-//     font-size:1.1vw;;
-//     margin-bottom:1vw;
-//   }
-  
-//   .thisMonth > h2 {
-//     letter-spacing: 0.2vw;
-//     font-size:3vw;
-//     margin-top:1vw;
-//   }
-  
-//   .lastMonth > p {
-//     font-size:1.1vw;
-//     margin-top:0.2vw;
-//     margin-bottom:7vw;
-//   }
-  
-//   .lastMonth > h4 {
-//     text-align: right;
-//     font-size:1.5vw;
-//     margin-bottom:0;
-  
-//   }
-//   .chart-days{
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: space-around;
-//     font-size: 1.2vw;
-//   }
-
-//   .chart-bars{
-//     display: flex;
-//     flex-direction: row;
-//     align-items: flex-end;
-//     justify-content: space-around;
-//     margin:0;
-//   }
-
-//   .spending-card > h1{
-//     font-size: 3vw;
-//     letter-spacing: 0.3vw;
-//   }
-
-//   .chart-bar{
-//     width: 4vw;
-//   }
-// }
-
-// @media only screen and (min-width: 2800px){
-//   .card-container{
-//     display: flex;
-//     flex-direction: column;
-//     width: 40vw;
-//     margin:0 auto;
-//   }
-
-//   .item-card{
-//     margin: 1vw 0 1vw 0;
-//     padding: 0 2vw;
-//   }
-
-//   .balance-card{
-//     display: flex;
-//     flex-direction: row;
-//     align-items: center;
-//   }
-
-//   .balance > h3{
-//     font-weight: 400;
-//     font-size: 0.8vw;
-//   }
-
-//   .balance > h2{
-//     font-weight: 700;
-//     font-size: 1.3vw;
-//     margin-top:1vw;
-//   }
-
-//   .icon-container{
-//     display: flex;
-//     flex-direction: row;
-//     align-items: center;
-//     justify-content: center;
-//     margin-left: auto;
-//   }
-
-//   .outer-circle{
-//     width: 2.5vw;
-//     height: 2.5vw;
-//     border: solid 2px $cream;
-//     border-radius: 50%;
-//     position: relative;
-//     z-index: 1;
-//   }
-
-//   .inner-circle{
-//     width: 2.5vw;
-//     height: 2.5vw;
-//     border-radius: 50%;
-//     position:relative;
-//     right: 1vw;
-//   }
-
-//   .chart-container{
-//     padding: 2vw 0 1vw 0;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//   }
-
-//   .spending-card{
-//     display: flex;
-//     flex-direction: column;
-//   }
-
-//   hr{
-//     width: 90%;
-//     height: 0.3vw;
-//   }
-
-//   .monthlySummary{
-//     display: flex;
-//     flex-direction: row;
-//     align-items: center;
-//     justify-content: space-between;
-//     height: 10vw;
-//   }
-//   .thisMonth > p {
-//     font-size:0.8vw;;
-//     margin-bottom:1vw;
-//   }
-  
-//   .thisMonth > h2 {
-//     letter-spacing: 0.2vw;
-//     font-size:2vw;
-//     margin-top:1vw;
-//   }
-  
-//   .lastMonth > p {
-//     font-size:0.8vw;
-//     margin-top:0.2vw;
-//     margin-bottom:7vw;
-//   }
-  
-//   .lastMonth > h4 {
-//     text-align: right;
-//     font-size:1vw;
-//     margin-bottom:0;
-  
-//   }
-//   .chart-days{
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: space-around;
-//     font-size: 1.2vw;
-//   }
-
-//   .chart-bars{
-//     display: flex;
-//     flex-direction: row;
-//     align-items: flex-end;
-//     justify-content: space-around;
-//     margin:0;
-//   }
-
-//   .spending-card > h1{
-//     font-size: 2vw;
-//     letter-spacing: 0.2vw;
-//   }
-
-//   .chart-bar{
-//     width: 3.5vw;
-//   }
-// }
