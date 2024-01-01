@@ -83,6 +83,25 @@ hr{
   background-color: $dark-brown;
 }
 
+.chart-bar:hover .hoverBox{
+  display: flex;
+  filter: brightness(80%);
+}
+
+.chart-bar:hover{
+  filter: brightness(150%);
+}
+
+.hoverBox{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-color: $dark-brown;
+  color:$cream;
+  border-radius: 5px;
+  display: none;
+}
+
 @media only screen and (max-width: 375px){
     
 
@@ -215,6 +234,16 @@ hr{
       .chart-bar{
         width: 8vw;
         border-radius: 5px;
+      }
+
+      .hoverBox{
+        font-size:2.2vw;
+        padding:1.5vw;
+        position:relative;
+        bottom:8vw;
+        font-weight: 800;
+        width: 8vw;
+        right:1.25vw;
       }
       
 
@@ -352,6 +381,18 @@ hr{
   width: 8vw;
   border-radius: 5px;
 }
+
+.hoverBox{
+  font-size:2.5vw;
+  font-weight: 800;
+  padding:2vw;
+  position:relative;
+  bottom:8vw;
+  width: 8vw;
+  margin:0 auto;
+  right:2vw;
+
+}
 }
 
 
@@ -420,6 +461,18 @@ hr{
 
 .chart-bar{
   width: 6vw;
+}
+
+.hoverBox{
+  font-size:1.75vw;
+  font-weight: 800;
+  padding:1.5vw;
+  position:relative;
+  bottom:8vw;
+  width: 5vw;
+  margin:0 auto;
+  right:1vw;
+
 }
 }
 
@@ -544,6 +597,18 @@ hr{
   .chart-bar{
     width: 5.5vw;
   }
+
+  .hoverBox{
+    font-size:1.5vw;
+    font-weight: 800;
+    padding:1.25vw;
+    position:relative;
+    bottom:5vw;
+    width: 4.5vw;
+    margin:0 auto;
+    right:1vw;
+  
+  }
 }
 
 @media only screen and (min-width: 850px){
@@ -665,6 +730,18 @@ hr{
 
   .chart-bar{
     width: 5.5vw;
+  }
+
+  .hoverBox{
+    font-size:1.5vw;
+    font-weight: 800;
+    padding:1.25vw;
+    position:relative;
+    bottom:5vw;
+    width: 4.5vw;
+    margin:0 auto;
+    right:0.75vw;
+  
   }
 }
 
@@ -788,6 +865,18 @@ hr{
 
   .chart-bar{
     width: 4.5vw;
+  }
+
+  .hoverBox{
+    font-size:1.2vw;
+    font-weight: 800;
+    padding:1vw;
+    position:relative;
+    bottom:5vw;
+    width: 3.5vw;
+    margin:0 auto;
+    right:0.5vw;
+  
   }
 }
 
@@ -919,6 +1008,18 @@ hr{
   .chart-bar{
     width: 4.5vw;
   }
+
+  .hoverBox{
+    font-size:1.2vw;
+    font-weight: 800;
+    padding:1vw;
+    position:relative;
+    bottom:4vw;
+    width: 3.5vw;
+    margin:0 auto;
+    right:0.5vw;
+  
+  }
 }
 
 @media only screen and (min-width: 1800px){
@@ -1048,6 +1149,18 @@ hr{
 
   .chart-bar{
     width: 4.2vw;
+  }
+
+  .hoverBox{
+    font-size:1.1vw;
+    font-weight: 800;
+    padding:0.75vw;
+    position:relative;
+    bottom:3.5vw;
+    width: 3.5vw;
+    margin:0 auto;
+    right:0.25vw;
+  
   }
 }
 

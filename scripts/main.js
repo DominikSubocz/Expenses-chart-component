@@ -4,6 +4,8 @@
 const jsonFilePath = 'data.json';
 
 
+
+
 // Define currentDate as new Date
 const currentDate =  new Date();
 const currentDay = currentDate.toLocaleString('en-US', { weekday: 'short' }).toLowerCase(); // Gets day as "Mon", "Tue", etc.
@@ -22,6 +24,7 @@ fetch(jsonFilePath)
   .then(data => {
     console.log(data); // Display the data in the console as an example
     updateDivHeights(data);
+    
     window.onresize = function(event) {
       updateDivHeights(data);
     }
@@ -37,6 +40,13 @@ fetch(jsonFilePath)
 function updateDivHeights(data) {
   const maxHeight = Math.max(...data.map(item => item.amount));
   const divs = document.querySelectorAll(".chart-bar"); // Replace with your div class or selector
+  const spans = document.querySelectorAll(".hoverBox");
+
+
+  spans.forEach((item, index) => {
+    const amount = data[index].amount;
+    spans[index].textContent = "$" + amount;
+  });
 
 // For each loop, that goes through each div
   divs.forEach((item, index) => {
