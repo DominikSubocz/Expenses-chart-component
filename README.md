@@ -29,7 +29,14 @@ Users should be able to:
 
 ### Screenshot
 
+Desktop
 ![](./desktop.png)
+
+Tablet
+![](./tablet.png)
+
+Mobile
+![](./mobile.png)
 
 
 ### Links
