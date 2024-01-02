@@ -44,8 +44,8 @@ Mobile
 
 ### Links
 
-- Solution URL: [Expense Chart Component]([https://your-solution-url.com](https://github.com/DominikSubocz/Expenses-chart-component))
-- Live Site URL: [Expense Chart Component]([https://your-live-site-url.com](https://luxury-blancmange-04d1d3.netlify.app))
+- Solution URL: [Expense Chart Component]([https://your-solution-url.com](https://github.com/DominikSubocz/Expenses-chart-component)
+- Live Site URL: [Expense Chart Component]([https://your-live-site-url.com](https://luxury-blancmange-04d1d3.netlify.app)
 
 ## My proces
 My process is fairly straight forward, there's not much to go over. Firstly I look at the design, and adjust the .HTML file to my needs, I just structure it a little bit better. Next I style the items in CSS, to look
