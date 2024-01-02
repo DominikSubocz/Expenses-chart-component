@@ -36,43 +36,34 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here]([https://your-live-site-url.com](https://luxury-blancmange-04d1d3.netlify.app))
+- Solution URL: [Expense Chart Component]([https://your-solution-url.com](https://github.com/DominikSubocz/Expenses-chart-component))
+- Live Site URL: [Expense Chart Component]([https://your-live-site-url.com](https://luxury-blancmange-04d1d3.netlify.app))
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- SCSS
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- JS
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I learned how to load and parse a XML file in JS, as well as change names of individual divs to be names of days of the week in the right order! Here are some snippets of what I learned when making this project!
 
-To see how you can add code snippets, see below:
+```JS
+const jsonFilePath = 'data.json';
 
-```html
-<h1>Some HTML code I'm proud of</h1>
+
+
+
+// Define currentDate as new Date
+const currentDate =  new Date();
+const currentDay = currentDate.toLocaleString('en-US', { weekday: 'short' }).toLowerCase(); // Gets day as "Mon", "Tue", etc.
 ```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
