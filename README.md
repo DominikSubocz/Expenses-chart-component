@@ -102,10 +102,11 @@ There's nothing much to say that I could think of, perhaps I will focus on some 
 ### Useful resources
 These resources have nothing to do with this website, but I thought I'd post them anyway.
 
-- [Icons8]([https://www.example.com](https://icons8.com)) - Very useful websites with illustrations, photos, icons and more.
-- [GetWaves]([https://www.example.com](https://getwaves.io)) - Cool website where you can genearte some vector waves and download them.
+- [Icons8](https://icons8.com) - Very useful websites with illustrations, photos, icons and more.
+- [GetWaves](https://getwaves.io) - Cool website where you can generate some vector waves and download them.
 
 ## Author
 
 - Website - Dominik Subocz (I'm still making my own website)
-- Frontend Mentor - [@DominikSubocz]([https://www.frontendmentor.io/profile/yourusername](https://www.frontendmentor.io/profile/DominikSubocz))
+- Frontend Mentor - [@DominikSubocz](https://www.frontendmentor.io/profile/DominikSubocz)
+
