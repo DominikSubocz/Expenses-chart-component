@@ -14,9 +14,6 @@ This is a solution to the [Expenses chart component challenge on Frontend Mentor
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -28,7 +25,7 @@ Users should be able to:
 - See the current day’s bar highlighted in a different colour to the other bars
 - View the optimal layout for the content depending on their device’s screen size
 - See hover states for all interactive elements on the page
-- **Bonus**: Use the JSON data file provided to dynamically size the bars on the chart
+- **Bonus**: Use the JSON data file provided to dynamically size the bars on the chart 
 
 ### Screenshot
 
@@ -39,11 +36,13 @@ Users should be able to:
 - Solution URL: [Expense Chart Component]([https://your-solution-url.com](https://github.com/DominikSubocz/Expenses-chart-component))
 - Live Site URL: [Expense Chart Component]([https://your-live-site-url.com](https://luxury-blancmange-04d1d3.netlify.app))
 
-## My process
+## My proces
+My process is fairly straight forward, there's not much to go over. Firstly I look at the design, and adjust the .HTML file to my needs, I just structure it a little bit better. Next I style the items in CSS, to look
+as closely to the solution as possible, this might take some time. Then I write a JS script if it's required, if not I just tweak bits in CSS, usually breakpoints, and fix them if they don't fit the window.
 
 ### Built with
 
-- Semantic HTML5 markup
+- HTML5 
 - SCSS
 - Flexbox
 - Mobile-first workflow
@@ -62,36 +61,40 @@ const jsonFilePath = 'data.json';
 // Define currentDate as new Date
 const currentDate =  new Date();
 const currentDay = currentDate.toLocaleString('en-US', { weekday: 'short' }).toLowerCase(); // Gets day as "Mon", "Tue", etc.
+
+fetch(jsonFilePath)
+  .then(response => {
+    if (!response.ok) {
+      // Throw error here
+    }
+    // Parse the JSON response
+  })
+  .then(data => {
+    console.log(data); // Display the data in the console as an example
+    // Update div height function
+    
+    window.onresize = function(event) {
+      // Update div height function
+    }
+  })
+  .catch(error => {
+    console.error('Error fetching JSON data:', error); // Display error.
+  });
 ```
-
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+Okay I won't post more of my JS file cause I don't want to spoil the fun of making this website for anyone. This will surely be very useful in my future projects, as I'll be able to just copy paste it from this project to another.
+Without having to bother with finding the right answer for long time.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+There's nothing much to say that I could think of, perhaps I will focus on some JS and do simillar scripts, or do some challanges on edabit.
 
 ### Useful resources
+These resources have nothing to do with this website, but I thought I'd post them anyway.
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Icons8]([https://www.example.com](https://icons8.com)) - Very useful websites with illustrations, photos, icons and more.
+- [GetWaves]([https://www.example.com](https://getwaves.io)) - Cool website where you can genearte some vector waves and download them.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Website - Dominik Subocz (I'm still making my own website)
+- Frontend Mentor - [@DominikSubocz]([https://www.frontendmentor.io/profile/yourusername](https://www.frontendmentor.io/profile/DominikSubocz))
